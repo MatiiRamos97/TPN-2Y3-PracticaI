@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(250, 226, 7);
+    display: grid;
+    place-items: center;
+}
+
+
+
+.Calculadora{
+    background-color: rgb(40, 3, 248);
+    color: white;
+    display: grid;
+    width: 400px;
+    height: 450px;
+    max-width: 100%;
+    grid-template-columns: repeat(4,1fr); 
+    padding: 2rem;
+    border-radius: 1.5rem;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.Pantalla{
+    grid-column: 1/-1;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color:rgb(250, 226, 7);
+    color: rgb(40, 3, 248);
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+} 
+
+/* se agrega el overflow */
+
+.numero:hover, .c:hover, .borrar:hover,.cero:hover,.igual:hover,.operador:hover,.punto:hover {
+    background-color: rgb(241, 233, 118);
+    color: rgb(40, 3, 248);
+}
+
+.cero{
+    grid-column: span 2; 
+    display: grid;
+    align-items: center;
+    justify-content: center;  
+}
+
+.igual{
+    grid-row: span 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
